@@ -41,21 +41,21 @@ npm run dev
 - `/api/jobs/*` - Job management
 - `/api/applications/*` - Application handling
 
-Bonus Features
+## Bonus Features
 File Upload: Allow resume uploads with cloud or local storage.
 Admin Panel: Dashboard to view all jobs and applications.
 Search/Filter: Enable job search by keyword or skills.
 Analytics: Count the number of applications per job.
 
-API Documentation
+## API Documentation
 Base URL
 text
 http://localhost:5000/api
 (or your deployed backend URL)
 
 
-###
-Authentication Endpoints
+
+## Authentication Endpoints
 Register a New User
 URL: /auth/register
 Method: POST
@@ -77,8 +77,7 @@ json
 }
 
 
-###
-Login User
+## Login User
 URL: /auth/login
 Method: POST
 Auth Required: No
@@ -104,8 +103,7 @@ json
 
 
 
-###
-Jobs Endpoints
+## Jobs Endpoints
 Get All Jobs
 URL: /jobs
 Method: GET
@@ -126,8 +124,7 @@ json
 
 
 
-###
-Create a Job (Employer Only)
+## Create a Job (Employer Only)
 URL: /jobs
 Method: POST
 Auth Required: Yes (Employer role)
@@ -157,8 +154,7 @@ json
 
 
 
-###
-Applications Endpoints
+## Applications Endpoints
 Apply for a Job
 URL: /applications
 Method: POST
@@ -173,8 +169,7 @@ json
 
 
 
-###
-Form Data: Optionally include resume file upload
+## Form Data: Optionally include resume file upload
 Success Response: 201 Created
 json
 {
@@ -191,8 +186,7 @@ json
 }
 
 
-###
-Get User Applications
+## Get User Applications
 URL: /applications/user/:userId
 Method: GET
 Auth Required: Yes
@@ -217,8 +211,7 @@ json
 
 
 
-###
-Admin Endpoints
+## Admin Endpoints
 Get All Applications (Admin Only)
 URL: /admin/applications
 Method: GET
@@ -250,8 +243,7 @@ json
 
 
 
-###
-Error Responses
+## Error Responses
 400 Bad Request
 json
 {
@@ -290,8 +282,7 @@ json
 }
 
 
-###
-WebSocket Events (Real-time Notifications)
+## WebSocket Events (Real-time Notifications)
 Connection
 Event: connection
 Description: Establishes WebSocket connection
@@ -308,8 +299,7 @@ json
   }
 }
 
-####
-Environment Variables
+## Environment Variables
 Required environment variables for the backend:
 
 text
